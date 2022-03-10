@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "13274a97-edfc-442b-8a07-55976a495557",
+		"name": "VAAC_monica-datasus",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Dados de vacinação",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://imunizacao-es.saude.gov.br/_search",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "imunizacao_public",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "qlto5t&7r_@+#Tlstigi",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"size\": 1000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://imunizacao-es.saude.gov.br/_search",
+					"protocol": "https",
+					"host": [
+						"imunizacao-es",
+						"saude",
+						"gov",
+						"br"
+					],
+					"path": [
+						"_search"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
